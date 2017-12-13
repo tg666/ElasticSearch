@@ -76,7 +76,7 @@
 						<?php if (isset($responseData['error'])) { ?>
 						<tr>
 							<th width="100">Error:</th>
-							<td style="color:red"><?php echo $esc($responseData['error']); ?></td>
+							<td style="color:red"><?php \Nette\Utils\Json::encode($responseData['error'], \Nette\Utils\Json::PRETTY); ?></td>
 						</tr>
 						<?php } ?>
 
